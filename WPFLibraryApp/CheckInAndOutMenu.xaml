@@ -1,0 +1,26 @@
+﻿<Page x:Class="WPFLibraryApp.CheckInAndOutMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFLibraryApp"
+      mc:Ignorable="d" 
+      d:DesignWidth="1200"
+      Loaded="Page_Loaded"
+      Background="LightGray"
+      Title="CheckInAndOutMenu" Height="520">
+
+    <Grid>
+        <Label x:Name="errorLabel" Content="Label" FontSize="20" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,52" Height="99" Width="1170"/>
+        <Button x:Name="backButton" Content="Back" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="175" Height="37" Margin="0,0,10,10" Click="backButton_Click"/>
+        <Label x:Name="usernameLabel" Content="Label" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0"/>
+        <Label x:Name="patronLabel" Content="Label" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,62,0,0"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="194" VerticalAlignment="Top" Width="552" Margin="20,170,0,0" ItemsSource="{Binding}"/>
+        <Label x:Name="checkoutLabel" Content="Books checked out by patron:" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,128,0,0"/>
+        <TextBox x:Name="checkTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="685,170,0,0" Width="304"/>
+        <Label x:Name="iSBNLabel" Content="Enter Book by ISBN:" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="685,128,0,0"/>
+        <Button x:Name="outButton" Content="Check O_ut" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Height="37" Width="139" Margin="850,248,0,0" Click="outButton_Click" />
+        <Button x:Name="inButton" Content="Check I_n" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Height="37" Width="139" Margin="685,248,0,0" Click="inButton_Click"/>
+
+    </Grid>
+</Page>

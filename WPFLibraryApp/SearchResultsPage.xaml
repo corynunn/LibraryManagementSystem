@@ -1,0 +1,23 @@
+﻿<Page x:Class="WPFLibraryApp.SearchResultsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFLibraryApp"
+      Background="LightGray"
+      mc:Ignorable="d" d:DesignWidth="1200"
+      Loaded="Page_Loaded"
+      Title="SearchResultsPage" Height="520">
+
+    <Grid>
+        <Button x:Name="endButton" Content="E_nd Search" FontSize="24" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="175" Click="endButton_Click"/>
+        <Label x:Name="resultsLabel" Content="Label" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,51,0,0" Width="768"/>
+        <ListBox x:Name="resultsListBox" HorizontalAlignment="Left" Height="307" VerticalAlignment="Top" Width="556" Margin="22,98,0,0" ItemsSource="{Binding}" SelectionChanged="resultsListBox_SelectionChanged"/>
+        <TextBox x:Name="bookDetailTextBox" IsReadOnly="True" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,98,10,0" Height="307" Width="538"/>
+        <Label x:Name="modeLabel" Content="Patron Search Results" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,10,0,0" Width="768"/>
+        <Button x:Name="bookDetailsButton" Content="Detail Popup" FontSize="24" HorizontalAlignment="Right" Margin="0,0,190,10" VerticalAlignment="Bottom" Width="175" Click="bookDetailsButton_Click"/>
+        <Label x:Name="errorLabel" FontSize="24" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,410,0,0" Height="64" Width="1097"/>
+
+
+    </Grid>
+</Page>

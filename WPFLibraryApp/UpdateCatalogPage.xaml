@@ -1,0 +1,28 @@
+﻿<Page x:Class="WPFLibraryApp.UpdateCatalogPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFLibraryApp"
+      mc:Ignorable="d" 
+      Background="LightGray"
+      Loaded="Page_Loaded"
+      d:DesignHeight="520" d:DesignWidth="1200"
+      Title="UpdateCatalogPage">
+
+    <Grid>
+        <Button x:Name="backButton" Content="B_ack" FontSize="24" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="175" Click="backButton_Click"/>
+        <Label x:Name="errorLabel" FontSize="20" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,10" Height="74" Width="990"/>
+        <ListBox x:Name="booksListBox" HorizontalAlignment="Left" Height="213" VerticalAlignment="Top" Width="556" Margin="20,155,0,0" ItemsSource="{Binding}" SelectionChanged="booksListBox_SelectionChanged"/>
+        <Label x:Name="iSBNLabel" Content="Book ISBN:" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="669,102,0,0"/>
+        <TextBox x:Name="iSBNTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="781,102,0,0" Width="250"/>
+        <Label x:Name="instructionsLabel" Content="To update or add a book you may search for it and select it from below or enter the ISBN directly." FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,23,0,0"/>
+        <TextBox x:Name="searchTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="17,102,0,0" Width="250"/>
+        <Button x:Name="searchButton" Content="S_earch" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Height="37" Width="100" Margin="289,102,0,0" Click="searchButton_Click"/>
+        <Button x:Name="resetButton" Content="R_eset" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Height="37" Width="100" Margin="476,102,0,0" Click="resetButton_Click"/>
+        <Button x:Name="removeButton" Content="Remove" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Height="37" Width="100" Margin="931,217,0,0" Click="removeButton_Click"/>
+        <Button x:Name="addButton" Content="A_dd" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Height="37" Width="100" Margin="931,165,0,0" Click="addButton_Click"/>
+        <Button x:Name="updateButton" Content="U_pdate" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Height="37" Width="100" Margin="931,270,0,0" Click="updateButton_Click"/>
+
+    </Grid>
+</Page>

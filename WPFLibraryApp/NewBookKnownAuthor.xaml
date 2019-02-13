@@ -1,0 +1,41 @@
+﻿<Page x:Class="WPFLibraryApp.NewBookKnownAuthor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFLibraryApp"
+      mc:Ignorable="d" 
+      Loaded="Page_Loaded"
+      Background="LightGray"
+      d:DesignHeight="520" d:DesignWidth="1200"
+      Title="New Book And Known Author">
+
+    <Grid>
+        <Button x:Name="cancel" Content="C_ancel" FontSize="24" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="175" Click="cancel_Click"/>
+        <Label x:Name="iSBNLabel" Content="ISBN:" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="391,61,0,0"/>
+        <TextBox x:Name="titleTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="453,113,0,0" Width="260"/>
+        <TextBox x:Name="copiesTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="453,166,0,0" Width="260"/>
+        <TextBox x:Name="numPagestextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="883,61,0,0" Width="260"/>
+        <TextBox x:Name="subjectTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="883,113,0,0" Width="260"/>
+        <TextBox x:Name="descriptionTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="883,166,0,0" Width="260"/>
+        <TextBox x:Name="publisherTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="883,224,0,0" Width="260"/>
+        <TextBox x:Name="yearTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="883,276,0,0" Width="260"/>
+        <TextBox x:Name="languageTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="883,329,0,0" Width="260"/>
+        <Label x:Name="titleLabel" Content="Title:" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="391,113,0,0"/>
+        <Label x:Name="copiesLabel" Content="Copies:" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="374,166,0,0"/>
+        <Label x:Name="requiredLabel" Content="Required" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="538,19,0,0"/>
+        <Label x:Name="optional" Content="Optional" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="964,19,0,0"/>
+        <Label x:Name="numPagesLabel" Content="Page Count:" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,61,322,0"/>
+        <Label x:Name="subjectLabel" Content="Subject:" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,113,322,0"/>
+        <Label x:Name="descriptionLabel" Content="Description:" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,166,322,0"/>
+        <Label x:Name="publisherLabel" Content="Publisher:" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,224,322,0"/>
+        <Label x:Name="yearLabel" Content="Year (4 char):" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,276,322,0"/>
+        <Label x:Name="language" Content="Language:" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,329,322,0"/>
+        <Label x:Name="errorLabel" Content="Label" FontSize="20" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,10" Height="80" Width="697"/>
+        <Button x:Name="saveButton" Content="S_ave" FontSize="24" HorizontalAlignment="Right" Margin="0,0,225,10" VerticalAlignment="Bottom" Width="175" Click="saveButton_Click"/>
+        <Label x:Name="givenISBN" Content="ISBN" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="453,61,0,0" Width="260"/>
+        <Label x:Name="authorLabel" Content="Author" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,19,0,0"/>
+        <TextBox x:Name="authorDetailTextBox" IsReadOnly="True" TextWrapping="Wrap" Text="TextBox" Margin="20,61,862,221"/>
+
+    </Grid>
+</Page>

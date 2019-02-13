@@ -1,0 +1,23 @@
+﻿<Page x:Class="WPFLibraryApp.AddSubtractCopiesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFLibraryApp"
+      mc:Ignorable="d" 
+      Background="LightGray"
+      Loaded="Page_Loaded"
+      d:DesignHeight="520" d:DesignWidth="1200"
+      Title="AddSubtractCopiesPage">
+
+    <Grid>
+        <TextBox x:Name="bookDetailTextBox" IsReadOnly="True" TextWrapping="Wrap" Text="TextBox" Margin="149,124,667,157"/>
+        <Button x:Name="backButton" Content="B_ack" FontSize="24" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="175" Click="backButton_Click"/>
+        <Label x:Name="errorLabel" Content="Label" FontSize="20" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,10" Height="142" Width="990"/>
+        <Label x:Name="instructionsLabel" Content="You may add to the number of copies of the selected book." FontSize="20" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="48,31,0,0" Height="41" Width="990"/>
+        <Label x:Name="instructionsLabel2" Content="Enter the value and press the the update button." FontSize="20" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="692,135,0,0" Height="41" Width="498"/>
+        <TextBox x:Name="updateCatalogTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="788,181,0,0" Width="250"/>
+        <Button x:Name="updateButton" Content="U_pdate" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Height="37" Width="100" Margin="938,234,0,0" Click="updateButton_Click"/>
+
+    </Grid>
+</Page>

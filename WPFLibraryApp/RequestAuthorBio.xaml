@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPFLibraryApp.RequestAuthorBio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFLibraryApp"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Background="LightGray"
+        Title="Bio?" Height="450" Width="600">
+    <Grid>
+        <Label x:Name="windowLabel1" Content="This is a new author, would you like to add a bio?" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,35,0,0"/>
+        <Label x:Name="bioLabel" Content="Bio:" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="81,168,0,0"/>
+        <TextBox x:Name="bioTextBox" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="NoWrap" Height="37" Margin="135,173,0,0" Width="250"/>
+        <Button x:Name="okButton" Content="O_K" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="199,247,0,0" Click="okButton_Click"/>
+        <Label x:Name="windowLabel2" Content="A bio is optional and can be left blank." FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,82,0,0"/>
+        <Label x:Name="errorLabel" Foreground="Red" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,299,0,0" Width="539"/>
+
+    </Grid>
+</Window>

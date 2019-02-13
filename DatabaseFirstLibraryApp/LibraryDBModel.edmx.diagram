@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="891ee001011b4205b36399a93a0acdd5" Name="Diagram1">
+        <EntityTypeShape EntityType="LibraryDBModel.Author" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryDBModel.Book" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryDBModel.Cardholder" Width="1.5" PointX="4.875" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryDBModel.CheckOutLog" Width="1.5" PointX="7.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryDBModel.Librarian" Width="1.5" PointX="2.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryDBModel.Person" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="LibraryDBModel.FK_dbo_Authors_dbo_People_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryDBModel.FK_dbo_Books_dbo_Authors_AuthorID" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryDBModel.FK_dbo_CheckOutLogs_dbo_Books_BookID" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryDBModel.FK_dbo_Cardholders_dbo_People_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryDBModel.FK_dbo_CheckOutLogs_dbo_Cardholders_CardholderID" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryDBModel.FK_dbo_Librarians_dbo_People_ID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
